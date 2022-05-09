@@ -28,7 +28,7 @@ function getData(e) {
 function descrInfo() {
   let idValue = apiData.id;
   $.ajax({
-    url: `https://pokeapi.co/api/v2/characteristic/${idValue}`,
+    url: `https://pokeapi.co/api/v2/pokemon-species/${idValue}`,
   }).then(function (data) {
     console.log(data);
     descrData = data;
@@ -38,11 +38,13 @@ function descrInfo() {
 function displayInfo() {
   let height = apiData.height * 0.1;
   let weight = apiData.weight * 0.1;
+  console.log(flavArray)
   $name.text(apiData.name);
   $numId.text("ID " + apiData.id);
   $elType.text(apiData.types[0].type.name);
   $height.text(height.toFixed(1) + " m");
   $weight.text(weight.toFixed(1) + " kg");
   $image.attr("src", apiData.sprites.front_default);
-  // $description.text(descrData.descriptions[7].description);
+  
+
 }
