@@ -14,7 +14,8 @@ function getData(e) {
   userInput = $input.val();
   $.ajax({
     url: `https://pokeapi.co/api/v2/pokemon/${userInput.toLowerCase()}`,
-  }).then(function (data) {
+  }).then(
+    function (data) {
       console.log(data);
       apiData = data;
       $input.val("");
@@ -36,15 +37,18 @@ function descrInfo() {
   });
 }
 function displayInfo() {
-  let height = apiData.height * 0.1;
-  let weight = apiData.weight * 0.1;
-  console.log(flavArray)
+  const height = apiData.height * 0.1;
+  const weight = apiData.weight * 0.1;
+  const descrArray = descrData.flavor_text_entries;
+  const flavArray = descrArray
+    .map((flavText) => flavText)
+    .filter((flavText) => (flavText.language.name === "en" ? flavText : null));
+  console.log(flavArray);
+  $description.text(flavArray[0].flavor_text);
   $name.text(apiData.name);
   $numId.text("ID " + apiData.id);
   $elType.text(apiData.types[0].type.name);
   $height.text(height.toFixed(1) + " m");
   $weight.text(weight.toFixed(1) + " kg");
   $image.attr("src", apiData.sprites.front_default);
-  
-
 }
