@@ -20,12 +20,9 @@ html {
   -webkit-text-stroke-color: #2468b1;
   letter-spacing: 5px;
 }
-body {
-  position: absolute;
-}
 
 main {
-  position: absolute;
+  position: relative;
   z-index: 10;
 }
 
@@ -90,10 +87,29 @@ main {
   text-transform: capitalize;
   position: absolute;
   z-index: 10;
-  top: 525px;
-  left: 695px;
+  top: 524px;
+  left: 690px;
   font-family: "vt323";
   font-size: 20px;
+  text-align: center;
+  background-color: null;
+  border-radius: 5%;
+  padding: 1px;
+  width: 80px;
+}
+#elemType2{
+  text-transform: capitalize;
+  position: absolute;
+  z-index: 10;
+  top: 524px;
+  left: 826px;
+  font-family: "vt323";
+  font-size: 20px;
+  text-align: center;
+  background-color: null;
+  border-radius: 5%;
+  padding: 1px;
+  width: 80px;
 }
 #text-box {
   position: absolute;
@@ -146,6 +162,7 @@ form {
   padding: 18px;
   background: #181818;
   border-bottom: none;
+  cursor: pointer;
 }
 #right {
   position: absolute;
@@ -155,6 +172,7 @@ form {
   padding: 17px;
   background: #181818;
   border-left: none;
+  cursor: pointer;
 }
 #down {
   position: absolute;
@@ -164,6 +182,7 @@ form {
   padding: 18px;
   background: #181818;
   border-top: none;
+  cursor: pointer;
 }
 #left {
   position: absolute;
@@ -173,4 +192,5 @@ form {
   padding: 17px;
   background: #181818;
   border-right: none;
+  cursor: pointer;
 }
