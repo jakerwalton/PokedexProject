@@ -46,8 +46,8 @@ function displayInfo() {
   console.log(flavArray);
   $description.text(flavArray[0].flavor_text);
   $name.text(apiData.name);
-  $numId.text("ID " + apiData.id);
-  $elType.text(apiData.types[0].type.name);
+  $numId.text(apiData.id);
+  $elType.text(apiData.types[0].type.name)
   $height.text(height.toFixed(1) + " m");
   $weight.text(weight.toFixed(1) + " kg");
   $image.attr("src", apiData.sprites.front_default);

@@ -11,14 +11,15 @@
       defer>
     </script>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
     <title>Interactive Pokédex</title>
   </head>
   <body>
     
+    <h1 id="main-title">The Interactive Pokédex!</h1>
     <main>
       <!-- <h3>Name</h3> -->
-      <h1 id="main-title">Welcome to the Interactive Pokédex!</h1>
       <img id="pokedex" src="https://lh3.googleusercontent.com/Oy-Hx56UBGJQObklV3SMq6amMZaiXmzZDLf35bezVkqTtKl6JPvEDx6-m2m65I1yZ1woS8AXLToSdCY7ErwzclhQ2i4E469Xv9Q2Kbc9Gcro6lK4Zytnk_wy-UiP4SVqZ244wxEb=w2400" alt="">
       <img id="sprite" />
       <p id="name"></p>
@@ -29,10 +30,11 @@
       <p id="height"></p>
       <!-- <p>Weight</p> -->
       <p id="weight"></p>
+      <form id="inputs">
+        <input id="text-box" type="text" placeholder="Enter Name" autocomplete="off"/>
+        <input id="submit" type="submit" value="     " />
+      </form>
+      
     </main>
-    <form id="inputs">
-      <input id="text-box" type="text" placeholder="Pokémon Name" />
-      <input id="submit" type="submit" value="Search Pokédex" />
-    </form>
   </body>
 </html>
