@@ -26,60 +26,94 @@ html {
 
 
 main {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   top: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  zoom: 125%;
+  zoom: 125%; */
+  z-index: 10;
 }
 
 #pokedex {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   top: 0px;
   height: 700px;
   width: auto;
-
+  z-index: 1; */
   z-index: 1;
+  zoom: 50%
 }
 #name {
-  text-transform: capitalize;
+  position: absolute;
+  /* text-transform: capitalize;
   position: relative;
   font-family: "vt323";
   text-align: center;
   color: lightgray;
   z-index: 10;
   top: -550px;
-  left: -186px;
+  left: -186px; */
+  z-index: 10;
+  top: 302px;
+  left: 250px;
+  font-family: "vt323";
+  text-transform: capitalize;
+  font-size: 18px;
+  text-align: center;
+  color: lightgray;
 }
 #sprite {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   justify-content: center;
   z-index: 10;
   top: -420px;
-  left: -185px;
+  left: -185px; */
+  z-index: 10;
+  top: 260px;
+  left: 238px;
+  zoom: 130%;
 }
 #idNum {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   font-family: "vt323";
   color: lightgray;
   text-align: left;
   z-index: 10;
   top: -490px;
-  left: -278px;
+  left: -278px; */
+  z-index: 10;
+  top: 436px;
+  left: 250px;
+  font-family: "vt323";
+  font-size: 18px;
+  color: lightgray;
 }
 #description {
-  inline-size: 270px;
+  position: absolute;
+  /* inline-size: 270px;
   position: relative;
   top: -717px;
   left: 190px;
   font-family: "vt323";
   color: lightgray;
+  z-index: 10; */
   z-index: 10;
+  top: 272px;
+  left: 670px;
+  font-family: "vt323";
+  font-size: 20px;
+  color: lightgray;
+  inline-size: 300px;
 }
 #submit {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   top: -452px;
   left: -383px;
   z-index: 10;
@@ -87,19 +121,35 @@ main {
   border-color: #fccf00;
   cursor: pointer;
   border-radius: 100%;
-  padding: 16px;
+  padding: 16px; */
+  z-index: 10;
+  top: 799px;
+  left: 204px;
+  cursor: pointer;
+  background: none;
+  border-color: #fccf00;
+  border-radius: 100%;
+  padding: 22px;
 }
 #elemType {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   text-transform: capitalize;
   text-align: center;
   top: -463px;
   left: 105px;
   font-family: "vt323";
+  z-index: 10; */
   z-index: 10;
+  top: 525px;
+  left: 680px;
+  font-family: "vt323";
+  font-size: 20px;
+
 }
 #text-box {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   top: -380px;
   left: -180px;
   z-index: 11;
@@ -110,30 +160,60 @@ main {
   font-size: 20px;
   outline: none !important;
   background: none !important;
-  -webkit-appearance: none;
+  -webkit-appearance: none; */
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  z-index: 10;
+  top: 900px;
+  left: 250px;
+  font-size: 30px;
+  color: lightgreen;
+  text-align: center;
+  width: 176px;
+  font-family: "vt323";
 }
 ::placeholder {
   color: lightgreen;
 }
 #height {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   top: -506px;
   left: 90px;
   font-size: 20px;
   font-family: "vt323";
   color: lightgray;
+  z-index: 10; */
   z-index: 10;
+  top: 638px;
+  left: 685px;
+  font-family: "vt323";
+  font-size: 25px;
+  color: lightgray;
+  inline-size: 100px;
 }
 #weight {
-  position: relative;
+  position: absolute;
+  /* position: relative;
   top: -566px;
   left: 240px;
   font-family: "vt323";
   font-size: 20px;
   color: lightgray;
+  z-index: 10; */
   z-index: 10;
+  top: 638px;
+  left: 862px;
+  font-family: "vt323";
+  font-size: 25px;
+  color: lightgray;
+  inline-size: 100px;
 }
 form {
   position: relative;
   top: -240px;
+}
+.visibility {
+  /* visibility: hidden; */
 }

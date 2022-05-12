@@ -51,4 +51,8 @@ function displayInfo() {
   $height.text(height.toFixed(1) + " m");
   $weight.text(weight.toFixed(1) + " kg");
   $image.attr("src", apiData.sprites.front_default);
+  visible();
+}
+function visible() {
+  $(".visibility").css("visibility", "visible")
 }
