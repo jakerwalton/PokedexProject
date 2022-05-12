@@ -3,6 +3,17 @@
   src: url("/pokemonfont/PokemonSolid.ttf");
 }
 
+@media only screen and (min-width: 0px) and (max-width: 870px) {
+  main {
+    zoom: 55%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  main {
+    zoom: 120%;;
+  }
+}
+
 html {
   background: url(https://browsecat.net/sites/default/files/pokemon-grass-background-128740-205985-9449412.png)
     no-repeat center center fixed;
@@ -11,19 +22,32 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: content;
+  align-items: center;
+}
+
 #main-title {
   text-align: center;
   font-family: PokeFonts, sans-serif;
   color: #fccf00;
-  font-size: 80px;
-  -webkit-text-stroke: 2px;
+  font-size: 5vw;
+  -webkit-text-stroke: 0.2vw;
   -webkit-text-stroke-color: #2468b1;
   letter-spacing: 5px;
+  margin: 30 auto;
+  z-index: 15;
 }
 
 main {
-  position: relative;
+  position: absolute;
+  display: flex;
+  justify-content: center;
   z-index: 10;
+  margin: 5%;
 }
 
 #pokedex {
@@ -31,23 +55,29 @@ main {
   z-index: 1;
   zoom: 50%;
 }
+#pokedexGlass {
+  position: absolute;
+  z-index: 20;
+  zoom: 50%;
+  opacity: 20%;
+}
 #name {
   position: absolute;
   z-index: 10;
   top: 300px;
-  left: 250px;
+  left: -348px;
   font-family: "vt323";
   text-transform: capitalize;
   font-size: 20px;
   text-align: center;
-  color: lightgray;
+  color: silver;
   opacity: 95%;
 }
 #sprite {
   position: absolute;
   z-index: 10;
   top: 260px;
-  left: 238px;
+  left: -222px;
   zoom: 130%;
   opacity: 95%;
 }
@@ -55,28 +85,28 @@ main {
   position: absolute;
   z-index: 10;
   top: 436px;
-  left: 250px;
+  left: -350px;
   font-family: "vt323";
   font-size: 18px;
-  color: lightgray;
+  color: silver;
   opacity: 95%;
 }
 #description {
   position: absolute;
   z-index: 10;
   top: 272px;
-  left: 667px;
+  left: 68px;
   font-family: "vt323";
   font-size: 19px;
-  color: lightgray;
+  color: silver;
   inline-size: 300px;
   opacity: 95%;
 }
 #submit {
   position: absolute;
-  z-index: 10;
+  z-index: 30;
   top: 799px;
-  left: 204px;
+  left: -395px;
   cursor: pointer;
   background: none;
   border-color: #fccf00;
@@ -84,41 +114,48 @@ main {
   padding: 22px;
 }
 #elemType {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: .5px;
   position: absolute;
   z-index: 10;
-  top: 524px;
-  left: 690px;
+  top: 522px;
+  left: 90px;
   font-family: "vt323";
   font-size: 20px;
   text-align: center;
-  background-color: null;
+  border-style: null;
+  border-width: 3px;
   border-radius: 5%;
-  padding: 1px;
-  width: 80px;
+  width: 75px;
+  -webkit-text-stroke: .2px;
+  -webkit-text-stroke-color: gray;
+  color: white;
 }
 #elemType2{
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: absolute;
   z-index: 10;
-  top: 524px;
-  left: 826px;
+  top: 522px;
+  left: 227px;
   font-family: "vt323";
   font-size: 20px;
   text-align: center;
-  background-color: null;
+  border-style: null;
+  border-width: 3px;
   border-radius: 5%;
-  padding: 1px;
-  width: 80px;
+  width: 75px;
+  -webkit-text-stroke: .2px;
+  -webkit-text-stroke-color: gray;
+  color: white;
 }
 #text-box {
   position: absolute;
   background: none !important;
   border: none !important;
   outline: none !important;
-  z-index: 10;
+  z-index: 30;
   top: 900px;
-  left: 250px;
+  left: -350px;
   font-size: 30px;
   color: lightgreen;
   text-align: center;
@@ -132,35 +169,38 @@ main {
   position: absolute;
   z-index: 10;
   top: 638px;
-  left: 685px;
+  left: 90px;
   font-family: "vt323";
   font-size: 25px;
-  color: lightgray;
+  color: silver;
   inline-size: 100px;
-  opacity: 95%;
 }
 #weight {
   position: absolute;
   z-index: 10;
   top: 638px;
-  left: 862px;
+  left: 265px;
   font-family: "vt323";
   font-size: 25px;
-  color: lightgray;
+  color: silver;
   inline-size: 100px;
-  opacity: 95%;
 }
 form {
-  position: relative;
+  position: absolute;
   top: -240px;
+}
+#buttons {
+  position: absolute;
+  top: -240px;
+  z-index: 30;
 }
 #up {
   position: absolute;
   z-index: 10;
-  top: 795px;
-  left: 486px;
+  top: 794px;
+  left: -113px;
   padding: 18px;
-  background: #181818;
+  background: #161616;
   border-bottom: none;
   cursor: pointer;
 }
@@ -168,19 +208,19 @@ form {
   position: absolute;
   z-index: 10;
   top: 830px;
-  left: 525px;
+  left: -73px;
   padding: 17px;
-  background: #181818;
+  background: #161616;
   border-left: none;
   cursor: pointer;
 }
 #down {
   position: absolute;
   z-index: 10;
-  top: 868px;
-  left: 486px;
+  top: 866px;
+  left: -113px;
   padding: 18px;
-  background: #181818;
+  background: #161616;
   border-top: none;
   cursor: pointer;
 }
@@ -188,9 +228,9 @@ form {
   position: absolute;
   z-index: 10;
   top: 830px;
-  left: 452px;
+  left: -148px;
   padding: 17px;
-  background: #181818;
+  background: #161616;
   border-right: none;
   cursor: pointer;
 }

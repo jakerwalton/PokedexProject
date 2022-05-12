@@ -15,7 +15,7 @@
     <title>Interactive Pokédex</title>
   </head>
   <body>
-    <h1 id="main-title">The Interactive Pokédex!</h1>
+    <h1 id="main-title">The Interactive Pokédex</h1>
 
     <main>
       <!-- <h3>Name</h3> -->
@@ -24,6 +24,7 @@
         src="https://lh3.googleusercontent.com/Oy-Hx56UBGJQObklV3SMq6amMZaiXmzZDLf35bezVkqTtKl6JPvEDx6-m2m65I1yZ1woS8AXLToSdCY7ErwzclhQ2i4E469Xv9Q2Kbc9Gcro6lK4Zytnk_wy-UiP4SVqZ244wxEb=w2400"
         alt=""
       />
+      <img id="pokedexGlass" src="https://lh3.googleusercontent.com/K7DqK1HYU0KJ191IAfl9DfyzLffUCj4wjPaoF7yqI7qDxeHjNJ_H2PO7lOD4Drn8M8j7Xc7bOvxii9fmbqOtV6oJwgoXbnPvdOZz0vopFkOTM5mJ7vKIaYE0JFydy3OQKcw4vLtW=w2400" alt="">
       <img id="sprite" />
       <p id="name"></p>
       <p id="idNum"></p>
@@ -34,19 +35,21 @@
       <p id="height"></p>
       <!-- <p>Weight</p> -->
       <p id="weight"></p>
-      <form id="inputs">
-        <input
-          id="text-box"
-          type="text"
-          placeholder="Enter Name"
-          autocomplete="off"
-        />
-        <input id="submit" type="submit" value="     " />
-        <button id="up"></button>
-        <button id="right"></button>
-        <button id="down"></button>
-        <button id="left"></button>
-      </form>
+        <form id="inputs">
+          <input
+            id="text-box"
+            type="text"
+            placeholder="Enter Name"
+            autocomplete="off"
+          />
+          <input id="submit" type="submit" value="     " />
+        </form>
+        <div id="buttons">
+        <button id="up" class="dPad"></button>
+        <button id="right" class="dPadLR"></button>
+        <button id="down" class="dPad"></button>
+        <button id="left" class="dPadLR"></button>
+      </div>
     </main>
   </body>
 </html>
