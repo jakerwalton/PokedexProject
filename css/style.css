@@ -12,116 +12,71 @@ html {
   background-size: cover;
 }
 #main-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  font-size: 5vw;
   font-family: PokeFonts, sans-serif;
   color: #fccf00;
-  -webkit-text-stroke: 0.2vw;
+  font-size: 80px;
+  -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #2468b1;
   letter-spacing: 5px;
 }
-
+body {
+  position: absolute;
+}
 
 main {
   position: absolute;
-  /* position: relative;
-  top: -100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  zoom: 125%; */
   z-index: 10;
 }
 
 #pokedex {
   position: absolute;
-  /* position: relative;
-  top: 0px;
-  height: 700px;
-  width: auto;
-  z-index: 1; */
   z-index: 1;
-  zoom: 50%
+  zoom: 50%;
 }
 #name {
   position: absolute;
-  /* text-transform: capitalize;
-  position: relative;
-  font-family: "vt323";
-  text-align: center;
-  color: lightgray;
   z-index: 10;
-  top: -550px;
-  left: -186px; */
-  z-index: 10;
-  top: 302px;
+  top: 300px;
   left: 250px;
   font-family: "vt323";
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   color: lightgray;
+  opacity: 95%;
 }
 #sprite {
   position: absolute;
-  /* position: relative;
-  justify-content: center;
-  z-index: 10;
-  top: -420px;
-  left: -185px; */
   z-index: 10;
   top: 260px;
   left: 238px;
   zoom: 130%;
+  opacity: 95%;
 }
 #idNum {
   position: absolute;
-  /* position: relative;
-  font-family: "vt323";
-  color: lightgray;
-  text-align: left;
-  z-index: 10;
-  top: -490px;
-  left: -278px; */
   z-index: 10;
   top: 436px;
   left: 250px;
   font-family: "vt323";
   font-size: 18px;
   color: lightgray;
+  opacity: 95%;
 }
 #description {
   position: absolute;
-  /* inline-size: 270px;
-  position: relative;
-  top: -717px;
-  left: 190px;
-  font-family: "vt323";
-  color: lightgray;
-  z-index: 10; */
   z-index: 10;
   top: 272px;
-  left: 670px;
+  left: 667px;
   font-family: "vt323";
-  font-size: 20px;
+  font-size: 19px;
   color: lightgray;
   inline-size: 300px;
+  opacity: 95%;
 }
 #submit {
   position: absolute;
-  /* position: relative;
-  top: -452px;
-  left: -383px;
-  z-index: 10;
-  background: none;
-  border-color: #fccf00;
-  cursor: pointer;
-  border-radius: 100%;
-  padding: 16px; */
   z-index: 10;
   top: 799px;
   left: 204px;
@@ -132,35 +87,16 @@ main {
   padding: 22px;
 }
 #elemType {
-  position: absolute;
-  /* position: relative;
   text-transform: capitalize;
-  text-align: center;
-  top: -463px;
-  left: 105px;
-  font-family: "vt323";
-  z-index: 10; */
+  position: absolute;
   z-index: 10;
   top: 525px;
-  left: 680px;
+  left: 695px;
   font-family: "vt323";
   font-size: 20px;
-
 }
 #text-box {
   position: absolute;
-  /* position: relative;
-  top: -380px;
-  left: -180px;
-  z-index: 11;
-  border: none;
-  color: lightgreen;
-  text-align: center;
-  font-family: "vt323";
-  font-size: 20px;
-  outline: none !important;
-  background: none !important;
-  -webkit-appearance: none; */
   background: none !important;
   border: none !important;
   outline: none !important;
@@ -178,13 +114,6 @@ main {
 }
 #height {
   position: absolute;
-  /* position: relative;
-  top: -506px;
-  left: 90px;
-  font-size: 20px;
-  font-family: "vt323";
-  color: lightgray;
-  z-index: 10; */
   z-index: 10;
   top: 638px;
   left: 685px;
@@ -192,16 +121,10 @@ main {
   font-size: 25px;
   color: lightgray;
   inline-size: 100px;
+  opacity: 95%;
 }
 #weight {
   position: absolute;
-  /* position: relative;
-  top: -566px;
-  left: 240px;
-  font-family: "vt323";
-  font-size: 20px;
-  color: lightgray;
-  z-index: 10; */
   z-index: 10;
   top: 638px;
   left: 862px;
@@ -209,11 +132,45 @@ main {
   font-size: 25px;
   color: lightgray;
   inline-size: 100px;
+  opacity: 95%;
 }
 form {
   position: relative;
   top: -240px;
 }
-.visibility {
-  /* visibility: hidden; */
+#up {
+  position: absolute;
+  z-index: 10;
+  top: 795px;
+  left: 486px;
+  padding: 18px;
+  background: #181818;
+  border-bottom: none;
+}
+#right {
+  position: absolute;
+  z-index: 10;
+  top: 830px;
+  left: 525px;
+  padding: 17px;
+  background: #181818;
+  border-left: none;
+}
+#down {
+  position: absolute;
+  z-index: 10;
+  top: 868px;
+  left: 486px;
+  padding: 18px;
+  background: #181818;
+  border-top: none;
+}
+#left {
+  position: absolute;
+  z-index: 10;
+  top: 830px;
+  left: 452px;
+  padding: 17px;
+  background: #181818;
+  border-right: none;
 }
