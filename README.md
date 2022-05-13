@@ -16,6 +16,7 @@ This is the first project I've created after 3 weeks of learning the fundamental
 #### [Try It Out Yourself](https://interactive-pokedex.netlify.app/)
 
 ### Down The Road
-- Id like to add a keypad that can be used to search up pokémon by their ID number
-- Make it so the up and down buttons on the dpad will go through the list of pokémon
+- Id like to add a keypad that can be used to search up pokémon by their ID number,
+- Make it so the up and down buttons on the dpad will go through the list of pokémon,
 - Add buttons to switch description screen to a stats screen.
+- Make it fully functional on mobile,
