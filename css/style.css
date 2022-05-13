@@ -131,6 +131,7 @@ main {
 }
 #elemType2{
   text-transform: uppercase;
+  letter-spacing: .5px;
   position: absolute;
   z-index: 10;
   top: 522px;
