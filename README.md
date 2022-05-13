@@ -7,6 +7,7 @@
 - **jQuery**
 - **PokeAPI**
 - **Photoshop**
+- **Da Font**
 
 ### What It Is
 This is the first project I've created after 2 weeks of learning the fundamentals of software engineering. It's a fun, fully functional, interactive Pokédex that uses the PokeAPI to display base information of all 898 Pokémon!
