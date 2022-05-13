@@ -1,8 +1,3 @@
-@font-face {
-  font-family: PokeFontS;
-  src: url("/pokemonfont/PokemonSolid.ttf");
-}
-
 @media only screen and (min-width: 0px) and (max-width: 870px) {
   main {
     zoom: 55%;
@@ -13,7 +8,10 @@
     zoom: 120%;;
   }
 }
-
+@font-face {
+  font-family: PokeFontS;
+  src: url("/pokemonfont/PokemonSolid.ttf");
+}
 html {
   background: url(https://browsecat.net/sites/default/files/pokemon-grass-background-128740-205985-9449412.png)
     no-repeat center center fixed;
@@ -32,7 +30,7 @@ body {
 
 #main-title {
   text-align: center;
-  font-family: PokeFontS;
+  font-family: PokeFontS, sans-serif;
   color: #fccf00;
   font-size: 5vw;
   -webkit-text-stroke: 0.2vw;
