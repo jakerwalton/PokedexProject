@@ -21,3 +21,4 @@ This is the first project I've created after 3 weeks of learning the fundamental
 - Add buttons to switch description screen to a stats screen.
 - Make it fully functional on mobile.
 - Put the png in the folder so it;s not reliant on a link.
+- Make it so pokémon scale to fit in the photo box so they all appear roughly the same size.
