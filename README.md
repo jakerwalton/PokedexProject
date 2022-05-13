@@ -13,7 +13,7 @@ This is the first project I've created after 3 weeks of learning the fundamental
 
 ![image of final project](https://lh3.googleusercontent.com/mDzgBgT8dh5kCFwP16gUbrvrRF9byrp84GpHvt6NHHIWxSXtC_jyWNERPLEcxknzokcp6ylyNr3ckVdOn_S6LagLw3lxqBQZ280LG0-qPFuaRkCr19vhjdjpagr2j1PBvADvxUEh=w2400)
 
-#### [Try It Out Yourself](https://rococo-baklava-5a0312.netlify.app/)
+#### [Try It Out Yourself](https://interactive-pokedex.netlify.app/)
 
 ### Down The Road
 - Id like to add a keypad that can be used to search up pokémon by their ID number
