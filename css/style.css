@@ -1,6 +1,9 @@
 @media only screen and (min-width: 0px) and (max-width: 870px) {
-  main {
+  body {
     zoom: 40%;
+  }
+  #main-title {
+    zoom: 250%;
   }
 }
 @media only screen and (min-width: 1500px) {
