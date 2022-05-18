@@ -2,6 +2,8 @@
   main {
     scale: 40%;
     margin: auto;
+    display: flex;
+    justify-content: center;
   }
   #main-title {
 /*     zoom: 250%; */
